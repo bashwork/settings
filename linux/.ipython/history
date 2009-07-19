@@ -1,0 +1,966 @@
+n
+p cls
+list
+p name
+p cls
+p bases
+c
+p name
+p class
+p cls
+list
+c
+p name
+c
+p name
+c
+p name
+c
+p name
+c
+p name
+p attrs
+c
+p name
+p attrs
+list
+n
+p attr_meta
+n
+p meta
+n
+p base_meta
+n
+p model_module
+n
+p new_class._meta
+p new_class._meta.fields
+list
+n
+dirnew_class
+dir(new_class)
+n
+dir(new_class)
+new_class.DoesNotExist
+new_class.DoesNotExist()
+n
+dir(new_class)
+n
+p new_class._meta.fields
+dir(new_clasS)
+dir(new_class)
+n
+p o2o
+p o2o_map
+n
+p o2o_map
+list
+n
+list
+n
+c
+c
+import urllib
+help(urllib)
+y
+who
+msg
+print "Galen"
+pdb
+help
+ls
+%ls
+lsmagic
+quickref
+env
+%lsmagic
+lsmagic?
+from pymodbus.datastore import ModbusSparseDataBlock
+a = ModbusSparseDataBlock(range(1,100))
+a?
+a.values
+a.__doc__
+a.__str__
+p a
+def fsck():
+    print "Hello"
+    
+fsck?
+page a
+p a
+fsck 
+fsck()
+/x
+/fsck
+hist
+!
+!1
+1
+hist 1
+pdef ModbusSparseDataBlock
+pdoc ModbusSparseDataBlock
+pinfo ModbusSparseDataBlock
+ModbusSparseDataBlock?
+psource ModbusSparseDataBlock
+import re
+psource re.match
+pfile re.match
+pfile re
+pfile re.match
+pfile re
+edit re
+env
+env['PAGER'] = more
+env['PAGER'] = "more"
+env
+env['PAGER'] = "more"
+import re
+ifile re
+pfile re
+psource re
+import re
+pfile re
+import re
+pfile re
+import re
+pfile re
+impor re
+import re
+pfile re
+psource re
+clear
+import twisted
+twisted.version
+seq
+exit
+quit
+quit()
+source = """x = 5"""
+co = compile(source, '<stdin>', 'exec')
+from dis import dis
+dis(co)
+dir(co)
+co.co_argcount
+co.co_code
+co.co_filename
+co.co_firstlineno
+ns = {}
+exec co in ns
+ns.keys()
+ns[x]
+ns['x']
+globals() is locals()
+import this
+class mark:
+    def meth(self):
+        print "Result"
+        
+mark.meth is mark.meth
+mark.meth
+x = mark.meth
+x is mark.meth
+x
+x == x
+dir(x)
+x.im_class
+x.im_class.meth
+x.im_self
+x = 0x3a
+print x
+print "%c" x
+print "%c" %  x
+import crypto
+import crypt
+help(crypt)
+dir(crypt)
+import crypto
+exit
+quit
+import Crypto
+import Crypto.Cipher
+from Crypto.Cipher import DES
+x = DES
+x
+DES.new()
+x = DES.new(1234, DES.MODE_CBC, 1234)
+x = DES.new("testing", DES.MODE_CBC, "testing")
+x = "message for a nother"
+size = len(message)
+size = len(x)
+size
+size = len(x) % 8
+size
+[' ' for i in seq(size, 8)]
+[' ' for i in range(size, 8)]
+j = x + [' ' for i in range(size, 8)]
+j = x + ''.join([' ' for i in range(size, 8)])
+j
+from pymodbus.pdu import ModbusPDU
+x = ModbusPDU()
+x.encode()
+x.decode()
+x.decode(24)
+x.decode(25)
+x = ModbusPDU()
+dir(x)
+x.unit_id
+x.encode()
+x.decode(2)
+x.decode('a')
+x.decode('aba')
+j = ModbusRequest()
+from modbus.pdu import *
+from pymodbus.pdu import *
+j = ModbusRequest()
+j.doException("Exception")
+from pymodbus.pdu import _logger
+_logger.debug("This")
+_logger.error("This")
+_logger.level(DEBUG)
+_logger.level(logging.Debug)
+import logging
+_logger.level(logging.DEBUG)
+log = logging.getLogger("pymodbus.protocol")
+log.level(logging.DEBUG)
+log.setlevel(logging.DEBUG)
+log.setLevel(logging.DEBUG)
+log.error("This")
+logging.basicConfig
+logging.basicConfig()
+log.error("This")
+x = ModbusRequest()
+x.doException("Exception")
+x.function_code = 2
+x.doException("Exception")
+x.doException(5)
+x = ModbusPDU()
+x.encode()
+x.decode()
+x.decode(23)
+from pymodbus.datastore import *
+x = ModbusDataBlock()
+x.reset
+ls
+seq(1,10)
+for i in 10:
+    print i
+    
+1:10
+1::10
+seq(10)
+count(10)
+range(10)
+[True] * 8
+[True, False, True] + [True] * 8
+range[10]
+([True, False, True] + [True] * 8)[0]
+([True, False, True] + [True] * 8)[1]
+import pymodbus
+from pymodbus import ModbusControlBlock as MCB
+from pymodbus.devcie import ModbusControlBlock as MCB
+from pymodbus.device import ModbusControlBlock as MCB
+MCB
+str(MCB)
+MCB.__str__
+x = MCB()
+x
+str(x)
+from pymodbus.diag_message import *
+        self.requests = [ 
+            #(DiagnosticStatusRequest,                      '\x00\x00\x00\x00'),
+            #(DiagnosticStatusSimpleRequest,                '\x00\x00\x00\x00'),
+            (RestartCommunicationsOptionRequest,            '\x00\x01\x00\x00', '\x00\x01\xff\x00'),
+            (ReturnDiagnosticRegisterRequest,               '\x00\x02\x00\x00', '\x00\x02\x00\x00'),
+            (ChangeAsciiInputDelimiterRequest,              '\x00\x03\x00\x00', '\x00\x03\x00\x00'),
+            (ForceListenOnlyModeRequest,                    '\x00\x04\x00\x00', '\x00\x04'),
+            (ClearCountersRequest,                          '\x00\x0a\x00\x00', '\x00\x0a\x00\x00'),
+            (ReturnBusMessageCountRequest,                  '\x00\x0b\x00\x00', '\x00\x0b\x00\x00'),
+            (ReturnBusCommunicationErrorCountRequest,       '\x00\x0c\x00\x00', '\x00\x0c\x00\x00'),
+            (ReturnBusExceptionErrorCountRequest,           '\x00\x0d\x00\x00', '\x00\x0d\x00\x00'),
+            (ReturnSlaveMessageCountRequest,                '\x00\x0e\x00\x00', '\x00\x0e\x00\x00'),
+            (ReturnSlaveNoResponseCountRequest,             '\x00\x0f\x00\x00', '\x00\x0f\x00\x00'),
+            (ReturnSlaveNAKCountRequest,                    '\x00\x10\x00\x00', '\x00\x10\x00\x00'),
+            (ReturnSlaveBusyCountRequest,                   '\x00\x11\x00\x00', '\x00\x11\x00\x00'),
+            (ReturnSlaveBusCharacterOverrunCountRequest,    '\x00\x12\x00\x00', '\x00\x12\x00\x00'),
+            (ClearOverrunCountRequest,                      '\x00\x14\x00\x00', '\x00\x14\x00\x00'),
+        ]
+requests = [ 
+            #(DiagnosticStatusRequest,                      '\x00\x00\x00\x00'),
+            #(DiagnosticStatusSimpleRequest,                '\x00\x00\x00\x00'),
+            (RestartCommunicationsOptionRequest,            '\x00\x01\x00\x00', '\x00\x01\xff\x00'),
+            (ReturnDiagnosticRegisterRequest,               '\x00\x02\x00\x00', '\x00\x02\x00\x00'),
+            (ChangeAsciiInputDelimiterRequest,              '\x00\x03\x00\x00', '\x00\x03\x00\x00'),
+            (ForceListenOnlyModeRequest,                    '\x00\x04\x00\x00', '\x00\x04'),
+            (ClearCountersRequest,                          '\x00\x0a\x00\x00', '\x00\x0a\x00\x00'),
+            (ReturnBusMessageCountRequest,                  '\x00\x0b\x00\x00', '\x00\x0b\x00\x00'),
+            (ReturnBusCommunicationErrorCountRequest,       '\x00\x0c\x00\x00', '\x00\x0c\x00\x00'),
+            (ReturnBusExceptionErrorCountRequest,           '\x00\x0d\x00\x00', '\x00\x0d\x00\x00'),
+            (ReturnSlaveMessageCountRequest,                '\x00\x0e\x00\x00', '\x00\x0e\x00\x00'),
+            (ReturnSlaveNoResponseCountRequest,             '\x00\x0f\x00\x00', '\x00\x0f\x00\x00'),
+            (ReturnSlaveNAKCountRequest,                    '\x00\x10\x00\x00', '\x00\x10\x00\x00'),
+            (ReturnSlaveBusyCountRequest,                   '\x00\x11\x00\x00', '\x00\x11\x00\x00'),
+            (ReturnSlaveBusCharacterOverrunCountRequest,    '\x00\x12\x00\x00', '\x00\x12\x00\x00'),
+            (ClearOverrunCountRequest,                      '\x00\x14\x00\x00', '\x00\x14\x00\x00'),
+        ]
+requests
+for msg,enc,exe in requests:
+    out = msg().execute().encode()
+    print out, exe
+    
+for msg,enc,exe in requests:
+    out = msg().execute().encode()
+    if out != exe: print msg
+    
+for msg,enc,exe in requests:
+    out = msg().execute().encode()
+    if out != exe: print msg
+    
+from pymodbus.mexceptions import *
+x = ModbusException("bad base")
+try:
+    raise x
+except ModbusException, ex:
+    print ex
+    
+try:
+    raise x
+except ModbusException, ex:
+    print id(ex)
+    
+try:
+    raise x
+except ModbusException, ex:
+    print ex.string
+    
+x = ModbusIOException("bad base")
+try:
+    raise x
+except ModbusException, ex:
+    print ex.string
+    
+try:
+    raise x
+except ModbusException, ex:
+    print str(ex)
+    
+"Modbus Error:" in "Modbus Error: 12345"
+from pymodbus.pdu import *
+request = ModbusRequest()
+        request.function_code = 1 
+        result = request.doException(ModbusExceptions.IllegalFunction)
+        self.assertTrue(str(result) == "ExceptionResponse (1,1)")
+request = ModbusRequest()
+request.function_code = 1
+result = request.doException(ModbusExceptions.IllegalFunction)
+str(result)
+for i in ModbusExceptions
+dir(ModbusExceptions)
+for i in dir(ModbusExceptions)
+for i in dir(ModbusExceptions):
+    print i
+    
+for i in ModbusExceptions:
+    print i
+    
+for i in dir(ModbusExceptions):
+    print i
+    
+for i in dir(ModbusExceptions):
+    if '__' not in i:print i
+    
+[i for i in dir(ModbusExceptions) if '__' not in i]
+for error in[i for i in dir(ModbusExceptions) if '__' not in i]:
+    print i
+    
+for error in[i for i in dir(ModbusExceptions) if '__' not in i]:
+    print error
+    
+for error in[i for i in dir(ModbusExceptions) if '__' not in i]:
+    print error()
+    
+for error in[i for i in dir(ModbusExceptions) if '__' not in i]:
+    print str(error)
+    
+for error in[i for i in dir(ModbusExceptions) if '__' not in i]:
+    print int(error)
+    
+for error in[i for i in dir(ModbusExceptions) if '__' not in i]:
+    print ModbusException.error
+    
+for error in[i for i in dir(ModbusExceptions) if '__' not in i]:
+    print ModbusException['error']
+    
+ModbusExceptions.__module__
+ModbusExceptions.__module__['Acknowledge']
+dir(ModbusExceptions)
+dir(ModbusExceptions)[0]'
+dir(ModbusExceptions)[0]
+for error in[i for i in dir(ModbusExceptions) if '__' not in i]:
+    print getattr(ModbusException, error)
+    
+for error in[i for i in dir(ModbusExceptions) if '__' not in i]:
+    print getattr(ModbusExceptions, error)
+    
+for error in[i for i in dir(ModbusExceptions) if '__' not in i]:
+    print getattr(ModbusExceptions, error) | 0x80
+    
+    request = ModbusRequest()
+        request.function_code = 1
+        for error in [getattr(ModbusExceptions, i) for i in dir(ModbusExceptions) if '__' not in i]: 
+            result = request.doException(error)
+            self.assertTrue(str(result) == "ExceptionResponse (%d,1)" % (error | 0x80))
+for error in [getattr(ModbusExceptions, i) for i in dir(ModbusExceptions) if '__' not in i]: 
+            result = request.doException(error)
+            print "ExceptionResponse (%d,1)" % (error | 0x80)
+for error in [getattr(ModbusExceptions, i) for i in dir(ModbusExceptions) if '__' not in i]: 
+            result = request.doException(error)
+            print "ExceptionResponse (%d,1)" % (error | 0x80)
+        for error in [getattr(ModbusExceptions, i) for i in dir(ModbusExceptions) if '__' not in i]: 
+            result = request.doException(error)
+            self.assertTrue(str(result) == "ExceptionResponse (%d,1)" % (error | 0x80))
+for error in [getattr(ModbusExceptions, i) for i in dir(ModbusExceptions) if '__' not in i]: 
+            result = request.doException(error)
+            print "ExceptionResponse (%d,1)" % (error | 0x80)
+for error in [getattr(ModbusExceptions, i) for i in dir(ModbusExceptions) if '__' not in i]: 
+            result = request.doException(error)
+            print "ExceptionResponse (%d,1)" % (error | 0x80)
+print str(result)
+for error in [getattr(ModbusExceptions, i) for i in dir(ModbusExceptions) if '__' not in i]: 
+            result = request.doException(error)
+            print "ExceptionResponse (%d,1)" % (error | 0x80)   
+            print str(result)
+for error in [getattr(ModbusExceptions, i) for i in dir(ModbusExceptions) if '__' not in i]: 
+            result = request.doException(error)
+            print "ExceptionResponse (129,%d)" % error   
+            print str(result)
+for error in [getattr(ModbusExceptions, i) for i in dir(ModbusExceptions) if '__' not in i]: 
+            result = request.doException(error)
+            print "Exception Response (129, %d)" % error   
+            print str(result)
+from twisted.python import version
+from twisted.python import Version
+cat ../../pymodbus/version.py
+from twisted.python import versions
+x = versions.Version('pymodbus', 1,0,1)
+x
+dir(x)
+x.__name__ = "PyModbus"
+dir(x)
+from epydoc.cli import cli
+help(cli)
+cli("--config")
+cli()
+from epydoc.cli import cli
+cli()
+import inotify
+import indicate
+x = 0
+"%H", x
+b = "%H" % x
+b = "%h" % x
+b = "%x" % x
+b
+"%x" % x
+"%2x" % x
+"%02x" % x
+"%02x" % 22
+"%02x" % 2
+from pymodbus.utilities import computeLRC
+data = "abcdef12"
+computeLRC(data)
+"%s" % computeLRC(data)
+"%02x" % computeLRC(data)
+"%c" % ':'
+"%s" % '\r\n'
+x = '\x00\x01\x00\x05\x01\x00'
+x
+"%s" % x
+import struct
+import binascii
+binascii.b2a_hex(x)
+dir('.')
+id
+type
+import mox
+from pymodbus.datastore import ModbusServerContext
+con = mox.MockObject(ModbusServerContext)
+con.validate(None, None, None).AndReturns(False)
+con.validate(None, None, None).AndReturn(False)
+con = mox.MockObject(ModbusServerContext)
+con.validate(None, None, None).AndReturn(False)
+mox.Replay(con)
+con.validate(1,2,3)
+ls
+IsA
+from mox import IsA
+IsA(int)
+con.validate(IsA(int),IsA(int),IsA(int))
+con.Verify()
+mox.Verify(con)
+context = ClasS()
+context = Class()
+context = Class
+context
+obj()
+dir('.')
+seq(10)
+range(10)
+str(1)
+x = xrange(10)
+str(x)
+class Name:
+    def __str__(self):
+        return "Galen", [1,2,3]
+    
+x = Name()
+str(x)
+class Name:
+    def __str__(self):
+        return "Galen", *[1,2,3]
+class Name:
+    def __str__(self):
+        return "Galen", [1,2,3]
+    
+[1]*5
+[20]*20
+[True] * 5
+[False] * 5 % 8
+((5 + 7) * 8) / 8
+True != 0
+False != 0
+from twisted.internet import reactor
+from pymodbus import version
+version.package
+version
+import pkg_resources
+pkg_resources.require('pydoctor')
+from pydoctor.driver import main
+main()
+from pydoctor.driver import __main__
+from pymodbus import __version__
+print __version__
+from pymodbus import _version
+x = _version.short
+x
+_version.short()
+_version.package()
+_version.package
+_version.minor
+_version.prerelease
+_version.short
+_version.short()
+_version.short().split('+')
+_version.short().split('+')[0]
+from which import which
+which('ls')
+which('ping')
+which('doxygen')
+import os
+for path in os.environ['PATH']: print path
+for path in os.environ['PATH'].split(':'): print path
+import os
+for path in os.environ['PATH'].split(os.pathsep): print path
+for path in os.environ['PATH'].split(os.pathsep):
+    file = os.path.join('doxygen', path)
+    if os.path.exists(file): print "Found"
+    
+for path in os.environ['PATH'].split(os.pathsep):
+    file = os.path.join('doxygen', path)
+    if os.path.exists(file): print file
+    
+os.path.join('/bin', 'doxygen')
+for path in os.environ['PATH'].split(os.pathsep):
+    file = os.path.join(path, 'doxygen')
+    if os.path.exists(file): print file
+    
+import pydoc
+import itertools
+help(itertools)
+ls
+items = ( ('MIXED FRUIT',   2.15),
+          ('FRENCH FRIES',  2.75),
+          ('SIDE SALAD',    3.35),
+          ('HOT WINGS',     3.55),
+          ('MOZZ STICKS',   4.20),
+          ('SAMPLER PLATE', 5.80),
+          ('BARBEQUE',      6.55) )
+items
+zip(*items)
+dish, price = zip(*items)
+dish
+pri
+price
+clear
+from rosetta.message import Example
+import simplejson
+import copy
+help(copy)
+import pdb
+pdb.main
+pdb.main()
+pdb.run
+pdb.run()
+from mexico.models import Person
+pdb.run(Person())
+list
+n
+s
+n
+from mexico.models import Person
+n
+p cls
+c
+x = Person()
+from mexico.models import Person
+p name
+n
+list
+n
+p new_class
+dir(new_class)
+p new_class._meta.fields
+list
+n
+p o2o_map
+n
+p o2o_map
+n
+list
+n
+dir(new_class)
+list
+n
+list
+dir(new_class)
+n
+c
+x = Person()
+from mexico.models import Person
+x = Person()
+n
+list
+p args
+p kwargs
+n
+p args_len
+list
+n
+p args
+n
+list
+n
+p kwargs
+p val
+n
+p val
+n
+dir(self)
+list
+n
+p val
+p field
+p field.name
+n
+p val
+p field.attname
+n
+dir(self)
+n
+from rosetta.message import Example
+x = Example()
+x.account
+x.broker
+x.account = '123456'
+x.account
+x.size
+x._meta.total_size
+ls
+from rosetta.message import Example
+x = Example()
+x.type
+x.size
+x.size()
+import sys
+del sys.modules['rosetta']
+from rosetta.message import Example
+x = Example()
+from rosetta.message import Example
+x = Example()
+x._size()
+import decimal
+x decimal.Decimal()
+x =  decimal.Decimal()
+type(x)
+import decimal
+x = decimal.Decimal
+x(2.34)
+x('2.34')
+y = x('2.34')
+y.to_integral
+y.to_integral()
+double
+import double
+import cPickle
+from enum import Enum
+color = Enum('red', 'green', 'blue')
+color.red
+r = color
+r
+r.red
+r = r.red
+r
+r()
+r.__name__
+r.__class__
+r.key
+r.index
+r.enumtype
+r.enumtype()
+ls
+color('blue')
+color.__repr__
+r.__repr__
+r.__repr__()-
+r.__repr__()
+from enum import Enum
+color = Enum('red', 'blue', 'green')
+color['red']
+color[1]
+color.getattr('blue')
+getattr(color, 'blue')
+x = color.red
+x.index
+x
+x.ke
+x.key
+str(x)
+int(x)
+from test import Enum
+x = Enum()
+x = Enum('a','b','c')
+x
+x.__iter__()
+from test import Enum
+x = Enum('a','b','c')
+x.__iter__()
+for i in x.__iter__(): print i
+from test import Enum
+x = Enum('a','b','c')
+x.__setitem__('color', '22')
+x['color'] = 22
+del x['color']
+del x.color
+isinstance
+class Example(object):
+    def __init__(self):
+        self.name = 'galen'
+    
+class Example(object):
+    def __init__(self):
+        self._name = 'galen'
+    name = lambda self: self._name
+    
+x = Example()
+x.name
+x.name()
+x.name
+lambda x: x*x(2)
+(lambda x: x*x)(2)
+(lambda x: x*x)(1)
+class Example(object):
+    def __init__(self):
+        self._name = 'galen'
+    name = (lambda self: self._name)()
+    
+class Example(object):
+    def __init__(self):
+        self._name = 'galen'
+    name = (lambda self: self._name)(self)
+    
+class Example(object):
+    def __init__(self):
+        self._name = 'galen'
+    name = (lambda: self._name)()
+    
+class Example(object):
+    def __init__(self):
+        self._name = 'galen'
+    name = (lambda self: self._name)()
+    
+class Example(object):
+    def __init__(self):
+        self._name = 'galen'
+    name = (lambda self: self._name)(self)
+    
+class Example(object):
+    def __init__(self):
+        self._name = 'galen'
+    name = property(lambda self: self._name)
+    
+x = Example()
+x.name
+x.name()
+x.nae
+x.name = this
+x.name
+x.name = 'nothing'
+x = {'a':1, 'b':2}
+x
+len(x)
+x[1]
+x[0]
+x.get(1)
+x.get(0)
+help(x.fromkeys)
+help(x.get)
+help(x.value)
+help(x.values)
+ptin x
+print x
+for k,v in x.iteritems()
+for k,v in x.iteritems():
+    if v == 1: print k
+    
+x['bb']
+help(addattr)
+help(setattr)
+from enum import Enum
+x = Enum('a', 'b')
+x.a
+x.b
+x.a = 22
+x.a
+del xa
+del x.a
+cat enum.py
+setattr(x, 'a', 22)
+del x.a
+x['a'] = 22
+from enum import Enum
+x = Enum('a', 'b')
+from enum import Enum
+x = Enum('a', 'b')
+from enum import Enum
+x = Enum('a', 'b')
+from enum import Enum
+x = Enum('a', 'b')
+from enum import Enum
+x = Enum('a', 'b')
+x.a
+x.b
+x.a = 22
+x.a
+x['a']
+from enum import Enum
+x = Enum('a', 'b')
+x.a
+x.b
+x['a']
+x['b']
+x[0]
+x(0)
+x('a')
+x.keys
+x = range(0,10)
+x
+a = xrange(1,3,1001)
+b = xrange(1,5,1001)
+b
+b = xrange(1,5,20)
+b
+b = range(1,5,20)
+b
+b = range(1,20,5)
+b
+b = range(0,20,5)
+b
+b = xrange(0,1000,5)
+b
+b = range(0,1000,5)
+b
+b = range(0,1001,5)
+b
+b = xrange(0,1001,5) + xrange(0,1001,3)
+b = xrange(0,1001,5); a = xrange(0,1001,3)
+sum(b) + sum(a)
+b = xrange(0,10,5); a = xrange(0,10,3)
+sum(b) + sum(a)
+b = xrange(0,1001,5); a = xrange(0,1000,3)
+sum(b) + sum(a)
+sum(xrange(0,1001,5))
+sum(xrange(0,1001,5)) + sum(xrange(0,1001,3))
+sum(set(range(0,1001,5) + range(0,1001,3)))
+set
+set([1,2,3,4,4,7,3,8])
+range(0,10,3)
+sum(set(range(0,1000,5) + range(0,1000,3)))
+sum(set(range(0,1001,5) + range(0,1000,3)))
+sum(set(range(0,1000,5) + range(0,1000,3)))
+x = range(0,1000,5)
+x
+x = range(0,1000,5) + range(0,1000,3)
+x
+y = set(x)
+y
+sum(y)
+sum(xrange(0,1000,5)) + sum(xrange(0,1000,3)) sum(xrange(0,1000,15))
+sum(xrange(0,1000,5)) + sum(xrange(0,1000,3)) - sum(xrange(0,1000,15))
+sum(i for i in range(1000) if not i%3 or not i%5)
+x = xrange(1000)
+x
+def get(i=1):
+    while True:
+        yeild i
+def get(i=1):
+    while True:
+        yield i
+        i += i
+        
+get()
+get
+get()
+for i in get(): print i
+for i in get():
+def get(i=1):
+    while True:
+        yield i
+        i += i
+def get(i=1):
+    while i < 4000000:
+        yield i
+        i += i
+        
+sum(i for i in get())
+x = get(1)
+x.next()
+x = lambda x=1: x
+x
+x()
+x = lambda x=1: while x < 4000000: yield x
+from runner import gen
+gen
+x = gen()
+x.next()
+for i in gen(): print i
+x = i for i in gen()
+x = [i for i in gen()]
+x
+sum(x)
+x = [i for i in gen() if not i % 2]
+x
+sum(x)
+sum([i for i in gen() if not i % 2])
+x = 600851475143
+i = 2
+while i < x:
+    if not x % i: print i
+    i += 1
+    
+i = x
+i = 2
+while x != 1:
+    if not x % i:
+        print i
+        x = x / i
+    i += 1
+    

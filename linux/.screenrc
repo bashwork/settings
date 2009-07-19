@@ -1,0 +1,26 @@
+#--------------------------------------
+# Basic Options
+#--------------------------------------
+autodetach on
+startup_message off
+vbell off
+
+#--------------------------------------
+# Status bar
+#--------------------------------------
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%= %3n %t%? [ %h ]%? %="
+caption string '%{= kW}%-Lw%{= kG}%50> %n%f* %t%{= kW}%+Lw%< %{= kG}%-=%D %d %M %Y  %c:%s%{-}'
+caption always
+
+#--------------------------------------
+# Default screens
+#--------------------------------------
+#screen -t programming 0 vim /media/public/coop
+screen -t bashwork    1
+#screen -t internet    2 links www.google.com
+#screen -t irc         3 irssi
+#screen -t news        4 slrn --create
+#screen -t mail        5 mutt
+#screen -t root        6 sudo su -
